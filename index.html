@@ -11,7 +11,7 @@
 
 <!-- ======================== START =============================-->
 
-<!-- WRITE A PROGRAM TO CHECK GIVEN NUMBER PERFECT OR NOT -->
+<!-- WRITE A PROGRAM TO CHECK GIVEN NUMBER IS PERFECT OR NOT -->
 <!-- 6, 28, 496, 8128, etc. -->
  
 <!--
@@ -37,11 +37,50 @@ if (sumOfDiv === givenNum) {
 
 perfectOrNot(496);
 
+</script>
+
+-->
+<!-- ======================== END =============================-->
+
+
+
+
+
+<!-- ======================== START =============================-->
+<!-- WRITE A PROGRAM TO CHECK GIVEN NUMBER IS ARMSTRONG NUMBER OR NOT -->
+<!-- 0, 1, 153, 370, 371 and 407, etc. -->
+
+
+<!-- 
+
+<script>
+
+function armstrong(anyNum){
+	//converting integer to a string
+	var n = anyNum.toString();
+
+	//storing the length of the string to a var
+	var len = n.length;
+
+	//returning the value of the number to the power of a variable len
+	var sum = 0;
+	for (i = 0; i < n.length; i++){
+		sum += Math.pow(n[i], len);
+	}
+
+	//checking whether it is Armstrong number or not
+	(sum === anyNum) ?	document.write(anyNum + " is Armstrong number.</br>") : document.write(anyNum + " is NOT Armstrong number. </br>");
+	document.write("Sum of the entered numbers is: " + sum + "</br>");
+
+}
+
+armstrong(370);
+
+</script>
+
 -->
 
 <!-- ======================== END =============================-->
-
-</script>
 
 </body>
 </html>
