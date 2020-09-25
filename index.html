@@ -137,5 +137,41 @@ armstrong(370);
 
 
 
+<!-- ======================== START =============================-->
+<!-- FIND THE LONGEST STRING IN A GIVEN ARRAY -->
+
+<!--
+
+<script>
+	
+
+	function longestText(array){
+		
+		const singleWord = array.split(" ");
+		console.log(singleWord);
+
+		var longestStr = "";
+
+		for (let i = 0; i < singleWord.length; i++){
+			let words = singleWord[i];
+			if (words.length > longestStr.length){
+				longestStr = words;
+			}
+		}
+
+		document.write("The longest string in a given array is: " + longestStr);
+	}
+
+	var output = longestText("My name is Faha Sharapov and I love coding and sports.")
+
+
+</script>
+
+
+-->
+
+<!-- ======================== END =============================-->
+
+
 </body>
 </html>
