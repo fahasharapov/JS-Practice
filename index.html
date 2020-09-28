@@ -140,8 +140,8 @@ armstrong(370);
 <!-- ======================== START =============================-->
 <!-- FIND THE LONGEST STRING IN A GIVEN ARRAY -->
 
-<!--
 
+<!--
 <script>
 	
 
@@ -169,6 +169,43 @@ armstrong(370);
 
 
 -->
+
+<!-- ======================== END =============================-->
+
+
+
+<!-- ======================== START =============================-->
+<!-- WRITE A PROGRAM TO CHECK IF A GIVEN WORD IS A PALINDROME -->
+
+
+<script>
+	
+
+	function palindrome(word){
+
+		let splitWords = word.split("");
+		console.log(splitWords);
+		let reversedWords = splitWords.reverse();
+		console.log(reversedWords);
+
+		for (let i = 0; i < reversedWords.length; i++){
+			if (word[i] === reversedWords[i]){
+				document.write(word + " is a palindrome. <br>");
+				break;
+			}
+				else {
+					document.write(word + " is NOT a palindrome. <br>");
+					break;
+			}
+		}
+
+	}
+
+	palindrome('faha');
+
+
+</script>
+
 
 <!-- ======================== END =============================-->
 
