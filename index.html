@@ -177,7 +177,7 @@ armstrong(370);
 <!-- ======================== START =============================-->
 <!-- WRITE A PROGRAM TO CHECK IF A GIVEN WORD IS A PALINDROME -->
 
-
+<!--
 <script>
 	
 
@@ -206,9 +206,32 @@ armstrong(370);
 
 </script>
 
-
+-->
 <!-- ======================== END =============================-->
 
+
+<!-- ======================== START =============================-->
+<!-- IMPLEMENTING INSERTION SORT -->
+
+    <script>
+    function insertionSort(array) {
+        for (let i = 1; i < array.length; i++) {
+            for (let j = i; j > 0; j--) {
+                if (array[j] < array[j - 1]) {
+                    [array[j], array[j - 1]] = [array[j - 1], array[j]];
+                } else {
+                    break;
+                }
+            }
+        }
+       return array;
+    }
+
+    console.log(insertionSort([20, 1, 5, 30, 22, 17, 5, 10, 8]));
+    </script>
+
+
+<!-- ======================== END =============================-->
 
 </body>
 </html>
