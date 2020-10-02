@@ -213,6 +213,7 @@ armstrong(370);
 <!-- ======================== START =============================-->
 <!-- IMPLEMENTING INSERTION SORT -->
 
+<!-- 
     <script>
     function insertionSort(array) {
         for (let i = 1; i < array.length; i++) {
@@ -229,6 +230,47 @@ armstrong(370);
 
     console.log(insertionSort([20, 1, 5, 30, 22, 17, 5, 10, 8]));
     </script>
+
+-->
+
+<!-- ======================== END =============================-->
+
+
+
+<!-- ======================== START =============================-->
+<!-- SEARCH USING BINARY SEARCH METHOD -->
+
+<script>
+	
+function binary_search (array, value){
+
+	let high = array.length - 1;
+	let mid = 0;
+	let low = 0;
+
+	while(low <= high){
+		mid = Math.floor((high + low) / 2);
+
+		if (array[mid] == value){
+			return array[mid];
+		}
+		else if (value > array[mid]) {
+			low = mid + 1;
+		} else {
+			high = mid - 1;
+		}
+	}
+
+return -1;
+
+}
+
+	let array = [3, 20, 40, 12, 2424, 23, 343, 12344, 49];
+	let sortedArray = array.sort(function(x, y){return x-y});
+	console.log(sortedArray);
+	console.log(binary_search(sortedArray, 40));
+
+</script>
 
 
 <!-- ======================== END =============================-->
